@@ -9,7 +9,7 @@ const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
 
   const clickHandler = () => {
-    setTitle("Updated");
+    setTitle("Updated");// this schedues the update of the title variable but doesn't update it yet. it's updated in the return statement in the jsx code and thats why console log in the next time will output the older value
     console.log(title);
   };
 
